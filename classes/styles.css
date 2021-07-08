@@ -1,0 +1,20 @@
+body {
+    background: linear-gradient(-45deg, #ba52ff, #ff87bf, #47ffc8, #ff8800);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+} @keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+} .center {
+    max-width: 100%;
+    max-width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    max-width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    max-width: stretch;
+    text-align: center;
+} img.center, video.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: stretch;
+}
